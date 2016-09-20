@@ -1,0 +1,25 @@
+/**
+*
+* {{ properCase name }}
+*
+*/
+
+import React from 'react';
+import { View } from 'react-native';
+
+{{#if wantStyles}}
+import styles from './styles';
+{{/if}}
+
+const {{ properCase name }} = () => {
+  return (
+    {{#if wantStyles}}
+    <View style={styles.container}>
+    {{else}}
+    <View>
+    {{/if}}
+    </View>
+  );
+}
+
+export default {{ properCase name }};
