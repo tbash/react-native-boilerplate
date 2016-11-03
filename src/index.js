@@ -6,11 +6,11 @@ import NavContainer from './containers/NavContainer'
 const store = configureStore();
 
 const App = () => {
-	return (
-		<Provider store={store}>
-			<NavContainer />
-		</Provider>
-	)
+  return (
+    <Provider store={store}>
+      <NavContainer />
+    </Provider>
+  )
 }
 
 export default App;

@@ -16,7 +16,7 @@ export const configureStore = (initialState = {}) => {
   ];
 
   const store = createStore(
-		createReducer(),
+    createReducer(),
     fromJS(initialState),
     compose(...enhancers)
   );
