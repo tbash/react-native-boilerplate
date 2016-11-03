@@ -3,6 +3,6 @@ import { fromJS } from 'immutable';
 
 describe('navContainerReducer', () => {
   it('returns the initial state', () => {
-    expect(navContainerReducer(undefined, {})).toEqual(fromJS({}));
+    expect(navContainerReducer(undefined, {})).toBe(fromJS({}));
   });
 });

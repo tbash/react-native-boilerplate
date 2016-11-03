@@ -11,7 +11,7 @@ describe('NavContainer actions', () => {
       const expected = {
         type: DEFAULT_ACTION,
       };
-      expect(defaultAction()).toEqual(expected);
+      expect(defaultAction()).toBe(expected);
     });
   });
 });
