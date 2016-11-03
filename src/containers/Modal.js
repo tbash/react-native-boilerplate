@@ -3,21 +3,10 @@ import { connect } from 'react-redux'
 import ModalScreen from '../components/ModalScreen'
 import { navigatePop } from './NavContainer/actions'
 
+const mapDispatchToProps = (dispatch) => ({
+  onButtonPress() {
+    dispatch(navigatePop())
+  }
+})
 
-const mapStateToProps = (state) => {
-	return {
-	}
-}
-
-const mapDispatchToProps = (dispatch) => {
-	return {
-		onButtonPress: () => {
-			dispatch(navigatePop())
-		}
-	}
-}
-
-export default connect(
-	mapStateToProps,
-	mapDispatchToProps
-)(ModalScreen)
+export default connect(null, mapDispatchToProps)(ModalScreen)
