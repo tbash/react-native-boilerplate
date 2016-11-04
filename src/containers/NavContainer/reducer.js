@@ -39,8 +39,8 @@ function navContainerReducer(state = initialState, action) {
     if (state.get('index') === 0 || state.get('routes').count() === 1) {
       return state;
     } else {
-      const scenes = NavigationStateUtils.pop(state.toJS());
-      return state.merge(scenes);
+      const routes = NavigationStateUtils.pop(state.toJS());
+      return state.merge(routes);
     }
   case NAV_JUMP_TO_KEY:
     return state.merge(NavigationStateUtils.jumpTo(state, action.payload));
