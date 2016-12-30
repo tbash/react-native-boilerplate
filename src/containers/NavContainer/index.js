@@ -51,16 +51,16 @@ const NavContainer = ({ backAction, ...navigationState }) => {
         />
       )}
       renderScene={({scene}) => {
-        const { route } = scene
+        const { route } = scene;
         switch(route.key) {
         case 'First':
-          return <First />
+          return (<First />);
         case 'Second':
-          return <Second />
+          return (<Second />);
         case 'Third':
-          return <Third />
+          return (<Third />);
         case 'Modal':
-          return <Modal />
+          return (<Modal />);
         }
       }}
     />
